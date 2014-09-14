@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+
+<html>
+
+	<head>
+		<title>Lost Pet Flyer Generator</title>
+	</head>
+
+	<body>
+
+		<h1>Lost Pet Flyer Generator</h1>
+
+
+		<img src = "images/lost.png" alt = "lost dog" />
+
+		<p>Please fill out relevant information below to create a lost pet poster.</p>
+
+		<form action="" method = "post">
+
+		<fieldset>
+			<legend>Pet Information</legend>
+			<p>Name of Pet:
+				<input type = "text" name="petname" />
+			</p>
+			<p>Last Known Location:
+				<input type = "text" name="location" />
+			</p>
+			<p>Breed:
+				<input type = "text" name="breed" />
+			</p>
+			<p>Color:
+				<input type = "color" name="petcolor" />
+			</p>
+			<p>Gender:
+				<input type = "radio" name ="gender" value="male" checked="checked" /> Male
+				<input type = "radio" name ="gender" value="female" /> Female
+			</p>
+			<p>Date Lost:
+				<input type = "date" name = "datelost" />
+			</p>
+
+			<p>Upload a picture:
+				<input type="file" name="petpic" /><br />
+				<input type="submit" value="Upload" />
+			</p>
+
+			<p>Enter any additional information that will help others identify your pet. For example: weight, peculiarities, unique markings, etc.</p>
+			<textarea name="addinfo" cols = "50" rows = "10"></textarea>
+		</fieldset>
+		<fieldset>
+			<legend>Contact Information</legend>
+			<p>Owner Name(s):
+				<input type = "text" name="ownername" />
+			</p>
+			<p>Primary Telephone Number:
+				<input type="tel" name = "primarytel" />
+			</p>
+			<p>Secondary Telephone Number(s):</p>
+				<input type="tel" name = "sectel1" /><br />
+				<input type="tel" name = "sectel2" />
+
+			<p>Email:
+				<input type="email" name="email" />
+			</p>
+
+			<p>Select preferred method(s) of contact:
+				<br />
+				<input type = "checkbox" name = "methodofcontact" value = "telephone" /> Telephone
+				<input type = "checkbox" name = "methodofcontact" value = "email"  /> Email
+			</p>
+		</fieldset>
+
+		<input type = "image" src="images/create.jpg" />
+
+	</form>
+
+
+
+
+
+
+
+	</body>
+
+
+
+
+</html>
